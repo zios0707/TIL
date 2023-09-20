@@ -2,26 +2,35 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(solution.solution(new int[]{2, 1, 6}));
-        System.out.println(solution.solution(new int[]{5, 2, 1, 7, 5}).toString());
+        System.out.println(solution.solution(0, "wsdawsdassw") == -1);
     }
 }
 
 
 class Solution {
     /*
-    /*  https://school.programmers.co.kr/learn/courses/30/lessons/181927 코딩테스트 연습 > 코딩 기초 트레이닝 > 마지막 두 원소
+    /*  https://school.programmers.co.kr/learn/courses/30/lessons/181926 코딩테스트 연습 > 코딩 기초 트레이닝 > 수 조작하기 1
     /**                                                                                                                */
-    public int[] solution(int[] list) {
-        int length = list.length - 1;
-        int[] array = new int[length + 2];
-        System.arraycopy(list, 0, array, 0, list.length);
-        if (list[length] > list[length - 1]) {
-            array[length + 1] = list[length] - list[length - 1];
-        } else {
-            array[length + 1] = list[length] * 2;
-        }
+    public int solution(int n, String control) {
+        int answer = n;
+        for (char c:
+             control.toCharArray()) {
+            switch (c) {
+                case 'w':
+                    answer += 1;
+                    break;
+                case 'a':
+                    answer -= 10;
+                    break;
+                case 's':
+                    answer -= 1;
+                    break;
+                case 'd':
+                    answer += 10;
+                    break;
+            }
 
-        return array;
+        }
+        return answer;
     }
 }
