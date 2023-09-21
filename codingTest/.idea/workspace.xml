@@ -5,22 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bde90b8-8033-4437-a789-83e88921e59d" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/src/main/java/com/javaspringwebsocket/Entity/Greeting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/src/main/java/com/javaspringwebsocket/Entity/HelloMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/src/main/java/com/javaspringwebsocket/JavaSpringWebSocketApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/src/main/java/com/javaspringwebsocket/config/WebSocketConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/src/main/java/com/javaspringwebsocket/controller/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/src/main/resources/static/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/src/main/resources/static/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSpringWebSocket/src/test/java/com/javaspringwebsocket/JavaSpringWebSocketApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -57,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695196034402</updated>
-      <workItem from="1695196035353" duration="9793000" />
+      <workItem from="1695196035353" duration="11734000" />
     </task>
     <servers />
   </component>
