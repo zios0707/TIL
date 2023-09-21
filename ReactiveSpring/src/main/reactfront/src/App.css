@@ -1,3 +1,9 @@
-.number {
-    color : red;
+.App {
+    margin: 200px auto 0;
+    text-align: center;
+    width: 400px;
+}
+
+body {
+    background-color: #282c34;
 }

@@ -3,15 +3,28 @@ import {useState} from "react";
 
 function App() {
 
-    let [num, setNum] = useState(1);
+    const [num, setNum] = useState(0);
 
-    /*리액트 식 스타일 붙이기*/
+    const [numList, setNumList] = useState([]);
+
+    function numRecoding() {
+        setNumList([...numList, num]);
+
+        setNum(0);
+    }
+
   return (
     <div className="App">
-      <header className="App-header">
-          <div style={{color: "red"}}>{ num }</div>
-        <div className="number">{ num }</div>
-      </header>
+        <div>현재 숫자 : {num}</div>
+        <button onClick={() => setNum(num + 1)}>숫자 증가</button>
+        <button onClick={() => setNum(num - 1)}>숫자 감소</button>
+        <button onClick={numRecoding} >숫자 기록</button>
+        <h1>저장된 숫자</h1>
+        <ul>
+            {numList.map((num) => (
+                <li>{num}</li>
+            ))}
+        </ul>
     </div>
   );
 }
