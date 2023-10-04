@@ -5,28 +5,17 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(solution.solution(new int[]{1, 4, 2, 5, 3}));
+        System.out.println(solution.solution(false, true, true, true));
     }
 }
 
 
 class Solution {
     /*
-    /*  https://school.programmers.co.kr/learn/courses/30/lessons/181918 코딩테스트 연습 > 코딩 기초 트레이닝 > 배열 만들기 4
-    /**                                                                                                                  */
-    public int[] solution(int[] arr) {
-        List<Integer> stk = new ArrayList<>();
-        int Iter = 0;
-        while(Iter < arr.length)
-            if(stk.isEmpty()) stk.add(arr[Iter++]);
-            else if(stk.get(stk.size() - 1) < arr[Iter]) stk.add(arr[Iter++]);
-            else stk.remove(stk.size() - 1);
-
-        int[] result = new int[stk.size()];
-
-        for (int i = 0; i < result.length; i++) {
-            result[i] = stk.get(i);
-        }
-        return result;
+    /*  https://school.programmers.co.kr/learn/courses/30/lessons/181917 코딩테스트 연습 > 코딩 기초 트레이닝 > 간단한 논리 연산
+    /**                                                                                                                */
+    public boolean solution(boolean x1, boolean x2, boolean x3, boolean x4) {
+        boolean answer = (x1 || x2) && (x3 || x4);
+        return answer;
     }
 }
