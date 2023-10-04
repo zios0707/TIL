@@ -2,47 +2,26 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(solution.solution(10, 20));
+        System.out.println(solution.solution(3, 10));
     }
 }
 
 
 class Solution {
     /*
-    /*  https://school.programmers.co.kr/learn/courses/30/lessons/181921 코딩테스트 연습 > 코딩 기초 트레이닝 > 배열 만들기
+    /*  https://school.programmers.co.kr/learn/courses/30/lessons/181920 코딩테스트 연습 > 코딩 기초 트레이닝 > 카운트 업
     /**                                                                                                            */
-    public int[] solution(int l, int r) {
-        int[] arr = new int[100];
+    public int[] solution(int start_num, int end_num) {
+        Integer[] integers = new Integer[50];
         int Iter = 0;
-        boolean a = true;
-        for (int i = l; i <= r; i++) {
-            String str = String.valueOf(i);
-            int count = 0;
-            for (char c: str.toCharArray()
-                 ) {
-                if(!(c == '5' || c == '0')) {
-                    count = 1;
-                }
-            }
-            if(count == 0) {
-                arr[Iter++] = Integer.valueOf(str);
-            }
+        for(int i = start_num; i <= end_num; i++) {
+            integers[Iter++] = i;
         }
+        int[] arr = new int[Iter];
 
-        if(Iter == 0) {
-            Iter = 1;
-            a = false;
+        for(int i = 0; i < Iter; i++) {
+            arr[i] = integers[i];
         }
-        int[] result = new int[Iter];
-
-        if(a) {
-            for(int i = 0; i < Iter; i++) {
-                result[i] = arr[i];
-            }
-        }else {
-            result[0] = -1;
-        }
-
-        return result;
+        return arr;
     }
 }
