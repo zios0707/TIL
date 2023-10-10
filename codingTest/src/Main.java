@@ -2,19 +2,19 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(solution.solution("ihrhbakrfpndopljhygc",4, 2));
+        System.out.println(solution.solution(3, 1, "qjnwezgrpirldywt"));
     }
 }
 
 
 class Solution {
     /*
-    /*  https://school.programmers.co.kr/learn/courses/30/lessons/181904 코딩테스트 연습 > 코딩 기초 트레이닝 > 세로 읽기
+    /*  https://school.programmers.co.kr/learn/courses/30/lessons/181903 코딩테스트 연습 > 코딩 기초 트레이닝 > qr code
     /**                                                                                                            */
-    public String solution(String my_string, int m, int c) {
+    public String solution(int q, int r, String code) {
         String result = "";
-        for (int i = c - 1; i < my_string.length(); i += m) {
-            result += my_string.charAt(i);
+        for (int i = r; i < code.length(); i += q) {
+            result += code.charAt(i);
         }
         return result;
     }
