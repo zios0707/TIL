@@ -1,6 +1,6 @@
 package Programmers;
 
-public class Main {
+public class L30N181905 {
     public static void main(String[] args) {
         System.out.println(solution("Progra21Sremm3", 6, 12));
     }
@@ -16,7 +16,7 @@ public class Main {
         return String.valueOf(charStr);
     }
 
-    private char[] swap (char[] str, int index1, int index2) {
+    private static char[] swap (char[] str, int index1, int index2) {
         char tmp = str[index1];
         str[index1] = str[index2];
         str[index2] = tmp;
