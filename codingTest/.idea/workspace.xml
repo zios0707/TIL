@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bde90b8-8033-4437-a789-83e88921e59d" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/../JSproject/.idea/JSproject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Programmers/L30N181915.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/L30N181914.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../R2DBC Spring/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../R2DBC Spring/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../R2DBC Spring/src/main/java/com/example/r2dbc_spring/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../R2DBC Spring/src/main/java/com/example/r2dbc_spring/user/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../R2DBC Spring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../R2DBC Spring/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Programmers/L30N181915.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programmers/L30N181915.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/Desktop/github/TIL/TIL/codingTest/src/Programmers/30/lessons",
+    "last_opened_file_path": "C:/Users/user/Desktop/github/TIL/TIL/codingTest/src/Programmers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,6 +42,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\github\TIL\TIL\codingTest\src\Programmers" />
       <recent name="C:\Users\user\Desktop\github\TIL\TIL\codingTest\src\Programmers\30\lessons" />
     </key>
   </component>
@@ -57,7 +57,7 @@
       <workItem from="1695196035353" duration="11734000" />
       <workItem from="1696405498032" duration="12122000" />
       <workItem from="1696466422498" duration="15000" />
-      <workItem from="1696923820393" duration="1199000" />
+      <workItem from="1696923820393" duration="2541000" />
     </task>
     <servers />
   </component>
