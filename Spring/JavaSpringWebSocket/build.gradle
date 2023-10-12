@@ -16,15 +16,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework:spring-web:'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-
-    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'com.google.code.gson:gson:2.9.0'
 
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
-
-    runtimeOnly 'com.mysql:mysql-connector-j'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
