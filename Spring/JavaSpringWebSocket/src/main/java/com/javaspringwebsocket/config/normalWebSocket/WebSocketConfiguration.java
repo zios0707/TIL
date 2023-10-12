@@ -1,5 +1,8 @@
-package com.javaspringwebsocket.config;
+package com.javaspringwebsocket.config.normalWebSocket;
 
+// STOMP 는 핸들러가 필요없음
+
+/*
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
@@ -24,3 +27,4 @@ public class WebSocketConfiguration implements WebSocketConfigurer {
 
 
 }
+*/

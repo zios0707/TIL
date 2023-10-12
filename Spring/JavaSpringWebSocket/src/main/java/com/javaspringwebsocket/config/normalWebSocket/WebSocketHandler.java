@@ -1,6 +1,8 @@
-package com.javaspringwebsocket.config;
+package com.javaspringwebsocket.config.normalWebSocket;
 
-import com.javaspringwebsocket.config.model.Message;
+// STOMP 는 핸들러가 필요없음
+
+/*import com.javaspringwebsocket.config.model.Message;
 import com.javaspringwebsocket.helper.JsonToObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.socket.CloseStatus;
@@ -82,29 +84,13 @@ public class WebSocketHandler extends TextWebSocketHandler {
 
     @Override
     public void handleTransportError(WebSocketSession session, Throwable error) throws IOException {
+
         var sessionId = session.getId();
 
         log.error("WebSocket transport error", error);
 
         session.sendMessage(new TextMessage("오류가 발생했습니다. 연결을 종료합니다."));
 
-        // 하위 명령들은 커넥션 끊길때 메서드와 동작이 같다.
-
-        sessions.remove(sessionId);
-    
-        final Message message = new Message();
-        message.closeConnect();
-        message.setSender(sessionId);
-
-        sessions.values().forEach(s -> {
-            try {
-                s.sendMessage(new TextMessage(message.getSender() + "님이 퇴장하셨습니다."));
-            } catch (IOException e) {
-                //TODO : add Exception code
-            }
-        });
-
-
     }
 
-}
+}*/

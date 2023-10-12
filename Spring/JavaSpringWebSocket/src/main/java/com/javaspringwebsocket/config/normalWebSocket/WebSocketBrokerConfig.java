@@ -1,10 +1,14 @@
-package com.javaspringwebsocket.config;
+package com.javaspringwebsocket.config.normalWebSocket;
 
+// STOMP 는 이거 필요없음
+
+/*
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
+
 @Configuration
 @EnableWebSocketMessageBroker
 public class WebSocketBrokerConfig implements WebSocketMessageBrokerConfigurer {
@@ -19,4 +23,4 @@ public class WebSocketBrokerConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry){
         registry.addEndpoint("/gs-guide-websocket"); // .withSockJS();
     }
-}
+}*/
