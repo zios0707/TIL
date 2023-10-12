@@ -34,8 +34,8 @@ public class WebSocketHandler extends TextWebSocketHandler {
                 if(!s.getId().equals(sessionId)) {
                     s.sendMessage(new TextMessage(message.getSender() + "님이 대화에 참가하셨습니다."));
                 }
-            }catch (Exception e) {
-                //TODO : Exception code
+            }catch (IOException e) {
+                //TODO : add Exception code
             }
         });
 
@@ -61,10 +61,49 @@ public class WebSocketHandler extends TextWebSocketHandler {
     @Override
     public void afterConnectionClosed(WebSocketSession session, CloseStatus status) {
 
+        var sessionId = session.getId();
+
+        sessions.remove(sessionId);
+
+        final Message message = new Message();
+        message.closeConnect();
+        message.setSender(sessionId);
+
+        sessions.values().forEach(s -> {
+            try {
+                s.sendMessage(new TextMessage(message.getSender() + "님이 퇴장하셨습니다."));
+            } catch (IOException e) {
+                //TODO : add Exception code
+            }
+        });
+
+
     }
 
     @Override
-    public void handleTransportError(WebSocketSession session, Throwable error) {
+    public void handleTransportError(WebSocketSession session, Throwable error) throws IOException {
+        var sessionId = session.getId();
+
+        log.error("WebSocket transport error", error);
+
+        session.sendMessage(new TextMessage("오류가 발생했습니다. 연결을 종료합니다."));
+
+        // 하위 명령들은 커넥션 끊길때 메서드와 동작이 같다.
+
+        sessions.remove(sessionId);
+    
+        final Message message = new Message();
+        message.closeConnect();
+        message.setSender(sessionId);
+
+        sessions.values().forEach(s -> {
+            try {
+                s.sendMessage(new TextMessage(message.getSender() + "님이 퇴장하셨습니다."));
+            } catch (IOException e) {
+                //TODO : add Exception code
+            }
+        });
+
 
     }
 
