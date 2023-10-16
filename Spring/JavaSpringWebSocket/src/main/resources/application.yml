@@ -4,12 +4,8 @@ server:
 
 spring:
 
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3305/websocket?characterEncoding=UTF-8&serverTimezone=UTC
-
-    username: root
-    password: root
+  main:
+    allow-bean-definition-overriding: true
 
   jpa:
     database: mysql

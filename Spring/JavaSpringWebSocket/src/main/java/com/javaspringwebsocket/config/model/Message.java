@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Message {
+    // {"type" : "", "sender" : "me", "channelId" : "test1", "data" : "test!"}
     private String type;
     private String sender;
     private String channelId;

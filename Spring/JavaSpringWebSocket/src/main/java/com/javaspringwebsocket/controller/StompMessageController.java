@@ -1,7 +1,9 @@
 package com.javaspringwebsocket.controller;
 
 import com.javaspringwebsocket.config.model.Message;
+import com.javaspringwebsocket.service.MessageService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class StompMessageController {
 
     private final SimpMessageSendingOperations simpMessageSendingOperations;
+
+    private final MessageService messageService;
+
 /*
     /sub/channel/123 // 구독 ( channelId : 123 )
     /pub/hello       // 발행
@@ -21,14 +26,14 @@ public class StompMessageController {
     @MessageMapping("/hello")
     public void message(Message message) {
 
-
+        messageService.save(message);
 
         simpMessageSendingOperations.convertAndSend("/sub/channel/" + message.getChannelId(), message);
     }
 
-    @GetMapping("/{channelId}")
+/*    @GetMapping("/{channelId}")
     public void getMessageList(@PathVariable String channelId) {
 
-    }
+    }*/
 
 }

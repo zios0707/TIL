@@ -1,6 +1,9 @@
-package com.javaspringwebsocket.config.STOMPconfigurer;
+package com.javaspringwebsocket.config.stompWebSocket;
 
+import com.javaspringwebsocket.service.MessageService;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
@@ -20,6 +23,8 @@ public class WebSocketConfigurer implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry
                 .addEndpoint("/ws")
-                .setAllowedOrigins("*");
+                .setAllowedOrigins("*"); // CORS 랑 비슷한 개념
+                                         // 뭐에 쓰이는지 모르겠음. 일단 전부 허용으로 하고
+                                         // 나중에 CORS 적용하면 같이 설정하는 방향으로 할 듯.
     }
 }
