@@ -9,8 +9,9 @@ import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequiredArgsConstructor
 public class StompMessageController {
 
@@ -31,9 +32,9 @@ public class StompMessageController {
         simpMessageSendingOperations.convertAndSend("/sub/channel/" + message.getChannelId(), message);
     }
 
-/*    @GetMapping("/{channelId}")
-    public void getMessageList(@PathVariable String channelId) {
+    /*    @GetMapping("/{channelId}")
+        public void getMessageList(@PathVariable String channelId) {
 
-    }*/
+        }*/
 
 }
