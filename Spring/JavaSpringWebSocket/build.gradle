@@ -26,8 +26,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-amqp:2.7.16'
     implementation 'org.springframework.boot:spring-boot-starter-reactor-netty:2.7.16'
 
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
